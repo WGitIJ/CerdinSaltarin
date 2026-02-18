@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
+            isGrounded = false;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
@@ -51,7 +52,8 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
+        bool touchingGround = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
+        isGrounded = touchingGround && rb.linearVelocity.y <= 0.01f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
