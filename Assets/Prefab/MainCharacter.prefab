@@ -232,3 +232,4 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  textCoins: {fileID: 0}
