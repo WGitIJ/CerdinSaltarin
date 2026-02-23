@@ -65,6 +65,11 @@ public class Player : MonoBehaviour
             UpdateCoinText();
         }
 
+        if(collision.transform.CompareTag("Trophie"))
+        {
+            LoadNextScene();
+        }
+
 
         if(collision.transform.CompareTag("Spike"))
         {
@@ -95,5 +100,19 @@ public class Player : MonoBehaviour
         {
             textCoins.text = coins.ToString();
         }
+    }
+
+    private void LoadNextScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        if(nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+            return;
+        }
+
+        SceneManager.LoadScene(0);
     }
 }
