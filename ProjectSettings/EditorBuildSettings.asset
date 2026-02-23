@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes/Menu/Menu.unity
     guid: d9b20674f6ce1524fa8568f4c76d9f4b
+  - enabled: 1
+    path: Assets/Scenes/Scenes/NivellAdria.unity
+    guid: bf069b0d1342c984b818f6a2b5c26f6b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
