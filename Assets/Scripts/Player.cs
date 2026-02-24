@@ -77,6 +77,11 @@ public class Player : MonoBehaviour
             LoadNextScene();
         }
 
+        if(collision.transform.CompareTag("Finish"))
+        {
+            SceneManager.LoadScene("END");
+        }
+
 
         if(collision.transform.CompareTag("Spike"))
         {
