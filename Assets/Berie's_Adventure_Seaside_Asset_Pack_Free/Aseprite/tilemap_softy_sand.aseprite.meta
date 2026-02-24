@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 1
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -72,7 +72,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 2
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -87,7 +87,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 2
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 639075354295794824
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -141,29 +141,115 @@ ScriptedImporter:
       height: 160
     spriteID: 7f23b0b06125d25cb833dda7e97843db
     spriteBone: []
-    spriteOutline: []
+    spriteOutline:
+    - outline:
+      - {x: 176, y: -51}
+      - {x: 176, y: 18}
+      - {x: 146, y: 18}
+      - {x: 148, y: 80}
+      - {x: -176, y: 80}
+      - {x: -176, y: -57}
+      - {x: -52, y: -52}
+      - {x: -49, y: -80}
+      - {x: 114, y: -80}
+    - outline:
+      - {x: -80, y: -15}
+      - {x: -81, y: -15}
+      - {x: -80, y: -13.5}
+      - {x: -79, y: -15}
+      - {x: -80, y: -16}
+    - outline:
+      - {x: -49, y: -15}
+      - {x: -48, y: -13.5}
+      - {x: -48, y: -15}
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0.217
+    uvTransform: {x: 4, y: 4}
+  spriteSheetImportData: []
+  tileSetImportData:
+  - name: Base
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 352
+      height: 160
+    spriteID: c1fc940c121561f47bf72a0ff24f3ce5
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -175, y: -17}
+      - {x: -81, y: -16}
+      - {x: -81, y: 80}
+      - {x: -176, y: 79}
+    - outline:
+      - {x: -79, y: -15}
+      - {x: -48, y: -15}
+      - {x: -48, y: 80}
+      - {x: -79, y: 80}
+    - outline:
+      - {x: -45, y: -47}
+      - {x: 79, y: -47}
+      - {x: 79, y: 78}
+      - {x: -46, y: 79}
+    - outline:
+      - {x: -80, y: -47}
+      - {x: -48, y: -48}
+      - {x: -49, y: -16}
+      - {x: -80, y: -17}
+    - outline:
+      - {x: -175, y: -47}
+      - {x: -82, y: -47}
+      - {x: -82, y: -18}
+      - {x: -175, y: -18}
+    - outline:
+      - {x: -47, y: -79}
+      - {x: 77, y: -79}
+      - {x: 77, y: -48}
+      - {x: -47, y: -48}
+    - outline:
+      - {x: 81, y: -47}
+      - {x: 175, y: -47}
+      - {x: 175, y: 16}
+      - {x: 81, y: 16}
+    - outline:
+      - {x: 81, y: 20}
+      - {x: 144, y: 20}
+      - {x: 144, y: 80}
+      - {x: 81, y: 80}
+    - outline:
+      - {x: 80, y: -78}
+      - {x: 113, y: -78}
+      - {x: 113, y: -49}
+      - {x: 80, y: -49}
     vertices: []
     spritePhysicsOutline: []
     indices: 
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  spriteSheetImportData: []
-  tileSetImportData: []
   asepriteLayers:
-  - layerIndex: 0
+  - layerIndex: 2
     uuid:
-      value0: 1525169535
+      value0: 2328219833
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: tilemap_softy_sand
-    layerFlags: 0
+    name: Base
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: tilemap_softy_sand
+    - name: Base
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,13 +257,37 @@ ScriptedImporter:
         y: 0
         width: 352
         height: 160
-      spriteId: 7f23b0b06125d25cb833dda7e97843db
+      spriteId: c1fc940c121561f47bf72a0ff24f3ce5
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
