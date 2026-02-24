@@ -20,11 +20,16 @@ public class Player : MonoBehaviour
   private int coins;
   public TMP_Text textCoins;
 
+  public AudioClip coinSound;
+  public AudioClip barrelSound;
+  private AudioSource audioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         UpdateCoinText();
     }
 
@@ -60,8 +65,10 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Coin"))
         {
+            audioSource.PlayOneShot(coinSound);
             Destroy(collision.gameObject);
             coins++;
+            textCoins.text = coins.ToString();
             UpdateCoinText();
         }
 
@@ -78,6 +85,7 @@ public class Player : MonoBehaviour
 
         if(collision.transform.CompareTag("Barrel"))
         {
+            audioSource.PlayOneShot(barrelSound);
             Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized;
             rb.linearVelocity = Vector2.zero; // Detener el movimiento actual del jugador
             rb.AddForce(knockbackDirection * 5.0f, ForceMode2D.Impulse);
